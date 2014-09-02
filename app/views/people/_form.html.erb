@@ -1,0 +1,120 @@
+<%= form_for @person, :html => { :class => "form-horizontal person" } do |f| %>
+
+    <% if @person.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @person.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :first_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :first_name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:first_name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :middle_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :middle_name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:middle_name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :last_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :last_name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:last_name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :gender, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :gender, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:gender]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :email_address, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email_address, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:email_address]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_of_birth, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :date_of_birth, :class => 'form-control' %>
+
+    </div>
+    <%= error_span(@person[:date_of_birth]) %>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :year_of_travel, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :year_of_travel, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:year_of_travel]) %>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :host_country, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :host_country, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:host_country]) %>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :city_in_cameroon, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :city_in_cameroon, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:city_in_cameroon]) %>
+
+  </div>
+  <div class="control-group">
+    <%= f.label :leve_of_education, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :leve_of_education, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:leve_of_education]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :profession, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :profession, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:profession]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :marital_status, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :marital_status, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:marital_status]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :other_information, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :other_information, :class => 'form-control' %>
+    </div>
+    <%= error_span(@person[:other_information]) %>
+  </div>
+</br></br></br></br>
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            people_path, :class => 'btn btn-default' %>
+
+<% end %>

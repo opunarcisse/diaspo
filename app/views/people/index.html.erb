@@ -1,0 +1,46 @@
+<%- model_class = Person -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th> Count</th>
+      <th> First Name </th>
+      <th> Last Name </th>
+      <th> Email Address </th>
+
+      <th> Traveled </th>
+<th> To </th>
+
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @people.each do |person| %>
+      <tr>
+        <td><%= link_to person.id, person_path(person) %>  
+<%= link_to t('.show', :default => t("helpers.links.details")), person_path(person), :class => 'btn btn-success btn-xs' %> </td>
+        <td><%= person.first_name %></td>
+        <td><%= person.last_name %></td>
+        <td><%= person.email_address %></td>
+        <td><%= "#{time_ago_in_words( person.year_of_travel)}  ago" %></td>
+ <td><%= person.host_country %></td>
+
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")), edit_person_path(person), :class => 'btn btn-default btn-xs' %>
+
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      person_path(person),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.register")),
+            new_person_path,
+            :class => 'btn btn-primary btn-lg' %>

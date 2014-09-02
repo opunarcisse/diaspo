@@ -1,0 +1,4 @@
+class Person < ActiveRecord::Base
+validates :email_address, :first_name, :gender, :year_of_travel, :host_country, :city_in_cameroon, :presence => true 
+
+end

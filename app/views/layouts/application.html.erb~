@@ -98,11 +98,11 @@
                                     <h1>START</h1>
                          <% count = Person.count %>
 	                 
-                                    <p> We proudly announce that there are currently.   <%= " #{count + 992} Paysans " %> and counting.  We target the entire Cameroonian communities in in the diaspora    </p>
+                                    <p> We proudly announce that there are currently   <%= " #{count + 992} Paysans " %> and counting.  We target the entire Cameroonian communities in in the diaspora    </p>
                                 </div>
                                 <div class="col-sm-6 col-md-6">
                                     <h1>MISSION</h1>
-                                    <p>Our vision is to create a platform where Cameroonians of the diaspora would easily reconnect with Cameroonian society in Cameroon and create a seamless collaboration in various domains such as skills transfer and development. </p>
+                                    <p>Our vision is to create a platform where Cameroonians of the diaspora would easily reconnect with Cameroonian society and Cameroonians in Cameroon, and create seamless collaborations and partnerships in various domains such as skills transfer and development.  </p>
                                 </div>
                             </div>
                         </div>
@@ -163,20 +163,19 @@
 <div class="col-md-3"> 
 <h2>Your participation counts</h2>
 
-<p> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction.</p> 
+<p> Our vision is to create a platform where Cameroonians of the diaspora would easily reconnect with Cameroonian society and Cameroonians in Cameroon, and create seamless collaborations and partnerships in various domains such as skills transfer and development. </p> 
 
-<p> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY. </p>
+<p> Cameroonians must lead in developing Cameroon and the one of the best ways to kick start a movement, is to inspire others to out-do their potentials. We are counting on Cameroonians of the diaspora to lead this movement. </p>
 </div>
 
             </div>
 
         </div>
 
-        <!--   Here is my new input-->
 
 
 
-    </div><!-- /.templatemo-team -->
+    </div>
 
         <div class="templatemo-service">
             <div class="container">

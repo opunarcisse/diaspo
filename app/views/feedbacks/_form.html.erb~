@@ -37,7 +37,7 @@
     <%= error_span(@feedback[:message]) %>
   </div>
 
-<br/>
+
   <%= f.submit nil, :class => 'btn btn-primary' %>
   <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
             feedbacks_path, :class => 'btn btn-default' %>

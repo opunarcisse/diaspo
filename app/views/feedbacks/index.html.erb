@@ -1,16 +1,25 @@
-<h1>Listing feedbacks</h1>
+<%- model_class = Feedback -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @feedbacks.each do |feedback| %>
+      <tr>
+        <td> <b> By <%= feedback.full_name %></b>
+<p> <%= simple_format feedback.message %> </p>  </td>
 
 
-<% @feedbacks.each do |feedback| %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
-<b> By <%= feedback.full_name %></b>
-<p> <%= simple_format feedback.message %> </p>
-  <% end %>
-<br>
-
-<%= link_to 'New Feedback', new_feedback_path %>
-
-
-
-
-
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_feedback_path,
+            :class => 'btn btn-primary btn-lg' %>

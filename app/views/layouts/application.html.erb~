@@ -85,7 +85,7 @@
                                 <p>COMING TOGETHER TO EXCELL</p>
                                 <p>
                                     <a class="btn btn-lg btn-green" href="http://guarded-coast-9336.herokuapp.com/people" role="button" style="margin: 20px;">Participate</a>
-                                    <a class="btn btn-lg btn-orange" href="http://guarded-coast-9336.herokuapp.com/people" role="button">Feedback</a>
+                                    <a class="btn btn-lg btn-orange" href="http://guarded-coast-9336.herokuapp.com/feedbacks" role="button">Feedback</a>
                                 </p>
                             </div>
                         </div>
@@ -102,8 +102,7 @@
                                 </div>
                                 <div class="col-sm-6 col-md-6">
                                     <h1>MISSION</h1>
-                                    <p>Our clients include construction companies, service providers like bars, 
-restaurants and nightclubs as well as housing companies, where we carry out cleaning of residential property.</p>
+                                    <p>Our vision is to create a platform where Cameroonians of the diaspora would easily reconnect with Cameroonian society in Cameroon and create a seamless collaboration in various domains such as skills transfer and development. </p>
                                 </div>
                             </div>
                         </div>

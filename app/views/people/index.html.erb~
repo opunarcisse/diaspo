@@ -10,8 +10,8 @@
       <th> Last Name </th>
       <th> Email Address </th>
 
-      <th> Traveled on </th>
-<th> Hosted </th>
+      <th> Traveled </th>
+<th> To </th>
 
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>

@@ -1,0 +1,16 @@
+<h1>Listing feedbacks</h1>
+
+
+<% @feedbacks.each do |feedback| %>
+
+<b> By <%= feedback.full_name %></b>
+<p> <%= simple_format feedback.message %></p>
+  <% end %>
+<br>
+
+<%= link_to 'New Feedback', new_feedback_path %>
+
+
+
+
+

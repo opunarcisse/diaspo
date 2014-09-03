@@ -8,8 +8,6 @@
       <th> Count</th>
       <th> First Name </th>
       <th> Last Name </th>
-      <th> Email Address </th>
-
       <th> Traveled </th>
 <th> To </th>
 
@@ -23,7 +21,6 @@
 <%= link_to t('.show', :default => t("helpers.links.details")), person_path(person), :class => 'btn btn-success btn-xs' %> </td>
         <td><%= person.first_name %></td>
         <td><%= person.last_name %></td>
-        <td><%= person.email_address %></td>
         <td><%= "#{time_ago_in_words( person.year_of_travel)}  ago" %></td>
  <td><%= person.host_country %></td>
 

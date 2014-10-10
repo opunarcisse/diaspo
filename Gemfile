@@ -38,7 +38,7 @@ gem 'country_select'
 # gem 'unicorn'
 
 
-gem 'rails_12factor', group: :production 
+# gem 'rails_12factor', group: :production 
 
 gem 'pg'
 gem 'unicorn'
